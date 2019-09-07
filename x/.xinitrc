@@ -11,7 +11,6 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 SESSION=${1:-xfce}
 
-# used for setting colorschemes with pywal
 wal -R
 
 # merge in defaults and keymaps
