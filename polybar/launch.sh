@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+# ~/.config/polybar/launch.sh
 
 # Terminate already running bar instances
 killall -q polybar

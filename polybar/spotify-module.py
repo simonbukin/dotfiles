@@ -1,4 +1,5 @@
 #!/bin/python
+# ~/.config/polybar/spotify-module.py
 
 import sys
 import dbus
