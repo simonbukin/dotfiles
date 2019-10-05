@@ -17,3 +17,5 @@ fi
 (cat ~/.cache/wal/sequences &)
 cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
+
+export PATH=$PATH:$(ruby -e 'puts Gem.user_dir')/bin:$PATH

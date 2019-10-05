@@ -12,6 +12,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 SESSION=${1:-xfce}
 
 wal -R
+source ~/.fehbg &
 
 # merge in defaults and keymaps
 
