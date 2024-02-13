@@ -1,6 +1,5 @@
 # dotfiles
-Dotfiles for my current setup. Details are in the screenshots.
+Dotfiles for my current setup.
 
-![Setup 09/07/2019](/setup-09-07-2019.png)
-![Setup 09/06/2019 v2](/setup-09-06-2019_2.png)
-![Setup 09/06/2019](/setup-09-06-2019.png)
+# installation
+Installation is managed by GNU Stow, which can be installed using `brew` on MacOS. Install dotfiles with `./install.sh`, and remove them with `./uninstall.sh`.
