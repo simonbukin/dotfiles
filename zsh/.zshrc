@@ -17,7 +17,6 @@ alias brd="bun run dev"
 alias yrd="yarn run dev"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
-. /opt/homebrew/etc/profile.d/z.sh
 
 # bun completions
 [ -s "/Users/simonbukin/.bun/_bun" ] && source "/Users/simonbukin/.bun/_bun"
@@ -25,3 +24,16 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# brew
+export PATH="/opt/homebrew/bin:$PATH"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+# starship
+eval "$(starship init zsh)"
+
