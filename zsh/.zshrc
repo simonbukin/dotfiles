@@ -37,6 +37,9 @@ export PATH="/opt/homebrew/bin:$PATH"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# zsh autosuggestions
+source "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
 # zoxide
 eval "$(zoxide init zsh)"
 
