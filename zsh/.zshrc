@@ -8,6 +8,7 @@ alias tree="eza --tree"
 alias cat="bat"
 alias grep="rg"
 alias vim="nvim"
+alias s="source ~/.zshrc"
 
 alias gl="git log --format='%h %s' -n 5"
 alias gs="git status"
@@ -16,6 +17,11 @@ alias nrd="npm run dev"
 alias brd="bun run dev"
 alias yrd="yarn run dev"
 
+tp() {
+  mkdir -p "$1" && cd "$1" || return 1
+}
+
+# disable brew update for SPEED
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 # bun completions
