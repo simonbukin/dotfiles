@@ -2,6 +2,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/simonbukin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/simonbukin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/simonbukin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/simonbukin/google-cloud-sdk/completion.zsh.inc'; fi
+
 alias ls="eza"
 alias ll="eza -alh"
 alias tree="eza --tree"
@@ -46,3 +52,6 @@ eval "$(zoxide init zsh)"
 # starship
 eval "$(starship init zsh)"
 
+
+# Created by `pipx` on 2024-04-19 17:50:17
+export PATH="$PATH:/Users/simonbukin/.local/bin"
