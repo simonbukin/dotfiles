@@ -18,17 +18,31 @@ deleted = "x"
 [aws]
 disabled = true
 
+[azure]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[python]
+disabled = true
+
+[nodejs]
+disabled = true
+
 [bun]
 symbol = "bun "
+disabled = true
 
 [deno]
 symbol = "deno "
+disabled = true
 
 [directory]
 read_only = " ro"
-
-[docker_context]
-symbol = "docker "
 
 [elixir]
 symbol = "exs "
@@ -53,9 +67,6 @@ symbol = "kt "
 
 [lua]
 symbol = "lua "
-
-[nodejs]
-symbol = "nodejs "
 
 [memory_usage]
 symbol = "memory "
@@ -108,9 +119,6 @@ Windows = "win "
 
 [package]
 symbol = "pkg "
-
-[python]
-symbol = "py "
 
 [ruby]
 symbol = "rb "
