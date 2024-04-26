@@ -21,6 +21,9 @@ disabled = true
 [azure]
 disabled = true
 
+[buf]
+disabled = true
+
 [gcloud]
 disabled = true
 
