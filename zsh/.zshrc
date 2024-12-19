@@ -58,6 +58,16 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Git push to upstream with branch tracking
+# Usage: gpu [branch_name]
+alias gpu='f() { 
+    if [ $# -eq 0 ]; then
+        git push -u origin $(git symbolic-ref --short HEAD)
+    else
+        git push -u origin "$1"
+    fi
+}; f'
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/simonbukin/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/simonbukin/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
